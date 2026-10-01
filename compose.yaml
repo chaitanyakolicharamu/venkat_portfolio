@@ -1,0 +1,7 @@
+services:
+  agent:
+    build: ./secure-agentic-ai
+    ports: ["127.0.0.1:8001:8001"]
+  rag:
+    build: ./healthcare-rag-evaluation
+    ports: ["127.0.0.1:8002:8002"]

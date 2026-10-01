@@ -1,0 +1,322 @@
+[
+  {
+    "user_input": "What is the appointment cancellation window?",
+    "response": "Appointment cancellation requires 24 hours notice before the scheduled appointment. [1]",
+    "retrieved_contexts": [
+      "Appointment cancellation requires 24 hours notice before the scheduled appointment.",
+      "The appointment waitlist is reviewed twice daily by scheduling staff.",
+      "Interpreter language support must be booked 48 hours before the appointment."
+    ],
+    "reference": "24 hours"
+  },
+  {
+    "user_input": "What is the appointment cancellation window?",
+    "response": "Appointment cancellation requires 48 hours notice before the scheduled appointment. [1]",
+    "retrieved_contexts": [
+      "Appointment cancellation requires 48 hours notice before the scheduled appointment.",
+      "The appointment waitlist is reviewed once daily by scheduling staff.",
+      "Interpreter language support must be booked 72 hours before the appointment."
+    ],
+    "reference": "48 hours"
+  },
+  {
+    "user_input": "How quickly must a referral intake be reviewed?",
+    "response": "Referral intake must be reviewed within 2 business days of receipt. [1]",
+    "retrieved_contexts": [
+      "Referral intake must be reviewed within 2 business days of receipt.",
+      "The appointment waitlist is reviewed twice daily by scheduling staff.",
+      "An invoice exception must be reviewed within 5 business days of submission to the billing queue."
+    ],
+    "reference": "2 business days"
+  },
+  {
+    "user_input": "How quickly must a referral intake be reviewed?",
+    "response": "Referral intake must be reviewed within 3 business days of receipt. [1]",
+    "retrieved_contexts": [
+      "Referral intake must be reviewed within 3 business days of receipt.",
+      "The appointment waitlist is reviewed once daily by scheduling staff.",
+      "An invoice exception must be reviewed within 7 business days of submission to the billing queue."
+    ],
+    "reference": "3 business days"
+  },
+  {
+    "user_input": "How early should staff book an interpreter?",
+    "response": "Interpreter language support must be booked 48 hours before the appointment. [1]",
+    "retrieved_contexts": [
+      "Interpreter language support must be booked 48 hours before the appointment.",
+      "The appointment waitlist is reviewed twice daily by scheduling staff.",
+      "Staff departure access must be removed within 1 hour of the approved departure time."
+    ],
+    "reference": "48 hours"
+  },
+  {
+    "user_input": "How early should staff book an interpreter?",
+    "response": "Interpreter language support must be booked 72 hours before the appointment. [1]",
+    "retrieved_contexts": [
+      "Interpreter language support must be booked 72 hours before the appointment.",
+      "The appointment waitlist is reviewed once daily by scheduling staff.",
+      "Staff departure access must be removed within 2 hours of the approved departure time."
+    ],
+    "reference": "72 hours"
+  },
+  {
+    "user_input": "What is the portal access support response target?",
+    "response": "Portal access support requests have a first response target of 4 business hours. [1]",
+    "retrieved_contexts": [
+      "Portal access support requests have a first response target of 4 business hours.",
+      "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "Priority support requests must be escalated within 15 minutes to the duty operations coordinator."
+    ],
+    "reference": "4 business hours"
+  },
+  {
+    "user_input": "What is the portal access support response target?",
+    "response": "Portal access support requests have a first response target of 6 business hours. [1]",
+    "retrieved_contexts": [
+      "Portal access support requests have a first response target of 6 business hours.",
+      "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "Priority support requests must be escalated within 30 minutes to the duty operations coordinator."
+    ],
+    "reference": "6 business hours"
+  },
+  {
+    "user_input": "When should onboarding access be requested?",
+    "response": "Staff onboarding access requests must arrive 3 business days before the start date. [1]",
+    "retrieved_contexts": [
+      "The staff onboarding access process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Portal access support requests have a first response target of 4 business hours.",
+      "Staff departure access must be removed within 1 hour of the approved departure time."
+    ],
+    "reference": "3 business days"
+  },
+  {
+    "user_input": "When should onboarding access be requested?",
+    "response": "Staff onboarding access requests must arrive 5 business days before the start date. [1]",
+    "retrieved_contexts": [
+      "The staff onboarding access process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Portal access support requests have a first response target of 6 business hours.",
+      "Staff departure access must be removed within 2 hours of the approved departure time."
+    ],
+    "reference": "5 business days"
+  },
+  {
+    "user_input": "When is access removed after staff departure?",
+    "response": "Staff departure access must be removed within 1 hour of the approved departure time. [1]",
+    "retrieved_contexts": [
+      "Staff departure access must be removed within 1 hour of the approved departure time.",
+      "The staff onboarding access process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Portal access support requests have a first response target of 4 business hours."
+    ],
+    "reference": "1 hour"
+  },
+  {
+    "user_input": "When is access removed after staff departure?",
+    "response": "Staff departure access must be removed within 2 hours of the approved departure time. [1]",
+    "retrieved_contexts": [
+      "Staff departure access must be removed within 2 hours of the approved departure time.",
+      "The staff onboarding access process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "The appointment waitlist is reviewed once daily by scheduling staff."
+    ],
+    "reference": "2 hours"
+  },
+  {
+    "user_input": "How often is the backup recovery exercise performed?",
+    "response": "A backup recovery exercise is performed every 30 days; the infrastructure owner records the outcome. [1]",
+    "retrieved_contexts": [
+      "A backup recovery exercise is performed every 30 days; the infrastructure owner records the outcome.",
+      "Appointment cancellation requires 24 hours notice before the scheduled appointment.",
+      "Staff departure access must be removed within 1 hour of the approved departure time."
+    ],
+    "reference": "every 30 days"
+  },
+  {
+    "user_input": "How often is the backup recovery exercise performed?",
+    "response": "A backup recovery exercise is performed every 60 days; the infrastructure owner records the outcome. [1]",
+    "retrieved_contexts": [
+      "A backup recovery exercise is performed every 60 days; the infrastructure owner records the outcome.",
+      "Appointment cancellation requires 48 hours notice before the scheduled appointment.",
+      "Staff departure access must be removed within 2 hours of the approved departure time."
+    ],
+    "reference": "every 60 days"
+  },
+  {
+    "user_input": "How often are downtime communication updates sent?",
+    "response": "During a service downtime event, communication updates are sent every 15 minutes to the operations lead. [1]",
+    "retrieved_contexts": [
+      "During a service downtime event, communication updates are sent every 15 minutes to the operations lead.",
+      "A backup recovery exercise is performed every 30 days; the infrastructure owner records the outcome.",
+      "Appointment cancellation requires 24 hours notice before the scheduled appointment."
+    ],
+    "reference": "every 15 minutes"
+  },
+  {
+    "user_input": "How often are downtime communication updates sent?",
+    "response": "During a service downtime event, communication updates are sent every 20 minutes to the operations lead. [1]",
+    "retrieved_contexts": [
+      "During a service downtime event, communication updates are sent every 20 minutes to the operations lead.",
+      "Appointment cancellation requires 48 hours notice before the scheduled appointment.",
+      "Staff departure access must be removed within 2 hours of the approved departure time."
+    ],
+    "reference": "every 20 minutes"
+  },
+  {
+    "user_input": "What is the invoice exception review deadline?",
+    "response": "An invoice exception must be reviewed within 5 business days of submission to the billing queue. [1]",
+    "retrieved_contexts": [
+      "The invoice exception review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "The appointment waitlist review process is owned by the fictional north operations team. Exceptions require supervisor review."
+    ],
+    "reference": "5 business days"
+  },
+  {
+    "user_input": "What is the invoice exception review deadline?",
+    "response": "An invoice exception must be reviewed within 7 business days of submission to the billing queue. [1]",
+    "retrieved_contexts": [
+      "The invoice exception review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "The appointment waitlist review process is owned by the fictional south operations team. Exceptions require supervisor review."
+    ],
+    "reference": "7 business days"
+  },
+  {
+    "user_input": "When is a record request acknowledged?",
+    "response": "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline. [1]",
+    "retrieved_contexts": [
+      "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration.",
+      "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    ],
+    "reference": "1 business day"
+  },
+  {
+    "user_input": "When is a record request acknowledged?",
+    "response": "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline. [1]",
+    "retrieved_contexts": [
+      "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration.",
+      "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    ],
+    "reference": "2 business days"
+  },
+  {
+    "user_input": "What is the deadline for laptop device return?",
+    "response": "A laptop device return must be completed within 5 calendar days after an approved equipment replacement. [1]",
+    "retrieved_contexts": [
+      "A laptop device return must be completed within 5 calendar days after an approved equipment replacement.",
+      "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "The backup recovery exercise process is owned by the fictional north operations team. Exceptions require supervisor review."
+    ],
+    "reference": "5 calendar days"
+  },
+  {
+    "user_input": "What is the deadline for laptop device return?",
+    "response": "A laptop device return must be completed within 7 calendar days after an approved equipment replacement. [1]",
+    "retrieved_contexts": [
+      "A laptop device return must be completed within 7 calendar days after an approved equipment replacement.",
+      "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "A backup recovery exercise is performed every 60 days; the infrastructure owner records the outcome."
+    ],
+    "reference": "7 calendar days"
+  },
+  {
+    "user_input": "How often is vendor access renewed?",
+    "response": "Vendor access renewal is reviewed every 30 days; unattended extensions are not allowed. [1]",
+    "retrieved_contexts": [
+      "The vendor access renewal process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Portal access support requests have a first response target of 4 business hours.",
+      "Staff departure access must be removed within 1 hour of the approved departure time."
+    ],
+    "reference": "every 30 days"
+  },
+  {
+    "user_input": "How often is vendor access renewed?",
+    "response": "Vendor access renewal is reviewed every 45 days; unattended extensions are not allowed. [1]",
+    "retrieved_contexts": [
+      "The vendor access renewal process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Portal access support requests have a first response target of 6 business hours.",
+      "Staff departure access must be removed within 2 hours of the approved departure time."
+    ],
+    "reference": "every 45 days"
+  },
+  {
+    "user_input": "What is the operations training completion deadline?",
+    "response": "Operations training must be completed within 10 business days of the assigned training date. [1]",
+    "retrieved_contexts": [
+      "The operations training completion process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "The appointment cancellation process is owned by the fictional north operations team. Exceptions require supervisor review."
+    ],
+    "reference": "10 business days"
+  },
+  {
+    "user_input": "What is the operations training completion deadline?",
+    "response": "Operations training must be completed within 15 business days of the assigned training date. [1]",
+    "retrieved_contexts": [
+      "The operations training completion process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "Priority support requests must be escalated within 30 minutes to the duty operations coordinator."
+    ],
+    "reference": "15 business days"
+  },
+  {
+    "user_input": "How often is the appointment waitlist reviewed?",
+    "response": "The appointment waitlist is reviewed twice daily by scheduling staff. [1]",
+    "retrieved_contexts": [
+      "The appointment waitlist is reviewed twice daily by scheduling staff.",
+      "Appointment cancellation requires 24 hours notice before the scheduled appointment.",
+      "Referral intake must be reviewed within 2 business days of receipt."
+    ],
+    "reference": "twice daily"
+  },
+  {
+    "user_input": "How often is the appointment waitlist reviewed?",
+    "response": "The appointment waitlist is reviewed once daily by scheduling staff. [1]",
+    "retrieved_contexts": [
+      "The appointment waitlist is reviewed once daily by scheduling staff.",
+      "Appointment cancellation requires 48 hours notice before the scheduled appointment.",
+      "Referral intake must be reviewed within 3 business days of receipt."
+    ],
+    "reference": "once daily"
+  },
+  {
+    "user_input": "What is the result routing acknowledgment target?",
+    "response": "Administrative result routing acknowledgment is due within 2 business hours; clinical interpretation is outside this policy. [1]",
+    "retrieved_contexts": [
+      "The result routing acknowledgment process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "Portal access support requests have a first response target of 4 business hours."
+    ],
+    "reference": "2 business hours"
+  },
+  {
+    "user_input": "What is the result routing acknowledgment target?",
+    "response": "Administrative result routing acknowledgment is due within 4 business hours; clinical interpretation is outside this policy. [1]",
+    "retrieved_contexts": [
+      "The result routing acknowledgment process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "Portal access support requests have a first response target of 6 business hours."
+    ],
+    "reference": "4 business hours"
+  },
+  {
+    "user_input": "When must priority support be escalated?",
+    "response": "Priority support requests must be escalated within 15 minutes to the duty operations coordinator. [1]",
+    "retrieved_contexts": [
+      "Priority support requests must be escalated within 15 minutes to the duty operations coordinator.",
+      "Portal access support requests have a first response target of 4 business hours.",
+      "Interpreter language support must be booked 48 hours before the appointment."
+    ],
+    "reference": "15 minutes"
+  },
+  {
+    "user_input": "When must priority support be escalated?",
+    "response": "Priority support requests must be escalated within 30 minutes to the duty operations coordinator. [1]",
+    "retrieved_contexts": [
+      "Priority support requests must be escalated within 30 minutes to the duty operations coordinator.",
+      "Portal access support requests have a first response target of 6 business hours.",
+      "Interpreter language support must be booked 72 hours before the appointment."
+    ],
+    "reference": "30 minutes"
+  }
+]

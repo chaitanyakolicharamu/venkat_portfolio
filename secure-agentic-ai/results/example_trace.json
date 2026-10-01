@@ -1,0 +1,195 @@
+{
+  "task": "Investigate the claims-api outage and identify the likely cause",
+  "service": "claims-api",
+  "user_id": "demo-analyst",
+  "role": "operator",
+  "run_id": "1671631b-c2e4-436b-a688-b9cc8cd62cbc",
+  "plan": [
+    {
+      "tool": "service_health",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      }
+    },
+    {
+      "tool": "recent_incidents",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      }
+    },
+    {
+      "tool": "analyze_logs",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      }
+    },
+    {
+      "tool": "search_runbooks",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      }
+    }
+  ],
+  "results": [
+    {
+      "tool": "service_health",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      },
+      "output": {
+        "service": "claims-api",
+        "status": "degraded",
+        "error_rate_percent": 4.8,
+        "p95_ms": 1840
+      },
+      "elapsed_ms": 0.027
+    },
+    {
+      "tool": "recent_incidents",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      },
+      "output": {
+        "incidents": [
+          {
+            "id": "INC-DEMO-104",
+            "service": "claims-api",
+            "symptom": "Connection pool exhausted after release r42",
+            "state": "investigating"
+          }
+        ]
+      },
+      "elapsed_ms": 0.359
+    },
+    {
+      "tool": "analyze_logs",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      },
+      "output": {
+        "sample_size": 100,
+        "signatures": {
+          "ok": 76,
+          "pool_timeout": 18,
+          "upstream_502": 6
+        },
+        "hypothesis": "Connection pool saturation; confirm before changing configuration"
+      },
+      "elapsed_ms": 0.033
+    },
+    {
+      "tool": "search_runbooks",
+      "arguments": {
+        "service": "claims-api",
+        "user_id": "demo-analyst"
+      },
+      "output": {
+        "source": "RB-POOL-01",
+        "steps": [
+          "Inspect pool saturation",
+          "Compare release configuration",
+          "Request approval for rollback",
+          "Verify recovery metrics"
+        ]
+      },
+      "elapsed_ms": 0.027
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "node": "guard",
+      "message": "Input policy passed"
+    },
+    {
+      "step": 2,
+      "node": "planner",
+      "message": "Planned 4 allowlisted tools",
+      "tools": [
+        "service_health",
+        "recent_incidents",
+        "analyze_logs",
+        "search_runbooks"
+      ]
+    },
+    {
+      "step": 3,
+      "node": "authorize",
+      "message": "Tool policy passed",
+      "tool": "service_health"
+    },
+    {
+      "step": 4,
+      "node": "executor",
+      "message": "Tool completed",
+      "tool": "service_health",
+      "attempts": 1,
+      "elapsed_ms": 0.027
+    },
+    {
+      "step": 5,
+      "node": "authorize",
+      "message": "Tool policy passed",
+      "tool": "recent_incidents"
+    },
+    {
+      "step": 6,
+      "node": "executor",
+      "message": "Tool completed",
+      "tool": "recent_incidents",
+      "attempts": 1,
+      "elapsed_ms": 0.359
+    },
+    {
+      "step": 7,
+      "node": "authorize",
+      "message": "Tool policy passed",
+      "tool": "analyze_logs"
+    },
+    {
+      "step": 8,
+      "node": "executor",
+      "message": "Tool completed",
+      "tool": "analyze_logs",
+      "attempts": 1,
+      "elapsed_ms": 0.033
+    },
+    {
+      "step": 9,
+      "node": "authorize",
+      "message": "Tool policy passed",
+      "tool": "search_runbooks"
+    },
+    {
+      "step": 10,
+      "node": "executor",
+      "message": "Tool completed",
+      "tool": "search_runbooks",
+      "attempts": 1,
+      "elapsed_ms": 0.027
+    },
+    {
+      "step": 11,
+      "node": "reviewer",
+      "message": "Verified evidence from tool results",
+      "evidence_count": 4
+    }
+  ],
+  "cursor": 4,
+  "status": "completed",
+  "answer": "claims-api is degraded; error rate 4.8%, P95 1840 ms. Connection pool saturation; confirm before changing configuration.",
+  "approval": false,
+  "review": {
+    "all_planned_tools_returned": true,
+    "tool_evidence_count": 4,
+    "reviewer": "deterministic evidence checker"
+  },
+  "pending_review": []
+}

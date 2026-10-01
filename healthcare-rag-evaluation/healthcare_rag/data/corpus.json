@@ -1,0 +1,834 @@
+[
+  {
+    "id": "north-cancellation-v1",
+    "title": "Appointment cancellation",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Appointment cancellation requires 72 hours notice before the scheduled appointment.",
+      "Ownership": "The appointment cancellation process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-cancellation-v2",
+    "title": "Appointment cancellation",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Appointment cancellation requires 24 hours notice before the scheduled appointment.",
+      "Ownership": "The appointment cancellation process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-cancellation-v1",
+    "title": "Appointment cancellation",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Appointment cancellation requires 72 hours notice before the scheduled appointment.",
+      "Ownership": "The appointment cancellation process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-cancellation-v2",
+    "title": "Appointment cancellation",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Appointment cancellation requires 48 hours notice before the scheduled appointment.",
+      "Ownership": "The appointment cancellation process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-referral-v1",
+    "title": "Referral intake review",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Referral intake must be reviewed within 5 business days of receipt.",
+      "Ownership": "The referral intake review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-referral-v2",
+    "title": "Referral intake review",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Referral intake must be reviewed within 2 business days of receipt.",
+      "Ownership": "The referral intake review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-referral-v1",
+    "title": "Referral intake review",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Referral intake must be reviewed within 5 business days of receipt.",
+      "Ownership": "The referral intake review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-referral-v2",
+    "title": "Referral intake review",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Referral intake must be reviewed within 3 business days of receipt.",
+      "Ownership": "The referral intake review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-interpreter-v1",
+    "title": "Interpreter booking",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Interpreter language support must be booked 96 hours before the appointment.",
+      "Ownership": "The interpreter booking process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-interpreter-v2",
+    "title": "Interpreter booking",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Interpreter language support must be booked 48 hours before the appointment.",
+      "Ownership": "The interpreter booking process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-interpreter-v1",
+    "title": "Interpreter booking",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Interpreter language support must be booked 96 hours before the appointment.",
+      "Ownership": "The interpreter booking process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-interpreter-v2",
+    "title": "Interpreter booking",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Interpreter language support must be booked 72 hours before the appointment.",
+      "Ownership": "The interpreter booking process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-portal-v1",
+    "title": "Portal access support",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Portal access support requests have a first response target of 8 business hours.",
+      "Ownership": "The portal access support process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-portal-v2",
+    "title": "Portal access support",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Portal access support requests have a first response target of 4 business hours.",
+      "Ownership": "The portal access support process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-portal-v1",
+    "title": "Portal access support",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Portal access support requests have a first response target of 8 business hours.",
+      "Ownership": "The portal access support process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-portal-v2",
+    "title": "Portal access support",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Portal access support requests have a first response target of 6 business hours.",
+      "Ownership": "The portal access support process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-onboarding-v1",
+    "title": "Staff onboarding access",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff onboarding access requests must arrive 7 business days before the start date.",
+      "Ownership": "The staff onboarding access process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-onboarding-v2",
+    "title": "Staff onboarding access",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff onboarding access requests must arrive 3 business days before the start date.",
+      "Ownership": "The staff onboarding access process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-onboarding-v1",
+    "title": "Staff onboarding access",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff onboarding access requests must arrive 7 business days before the start date.",
+      "Ownership": "The staff onboarding access process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-onboarding-v2",
+    "title": "Staff onboarding access",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff onboarding access requests must arrive 5 business days before the start date.",
+      "Ownership": "The staff onboarding access process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-departure-v1",
+    "title": "Staff departure access",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff departure access must be removed within 4 hours of the approved departure time.",
+      "Ownership": "The staff departure access process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-departure-v2",
+    "title": "Staff departure access",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff departure access must be removed within 1 hour of the approved departure time.",
+      "Ownership": "The staff departure access process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-departure-v1",
+    "title": "Staff departure access",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff departure access must be removed within 4 hours of the approved departure time.",
+      "Ownership": "The staff departure access process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-departure-v2",
+    "title": "Staff departure access",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Staff departure access must be removed within 2 hours of the approved departure time.",
+      "Ownership": "The staff departure access process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-backup-v1",
+    "title": "Backup recovery exercise",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A backup recovery exercise is performed every 90 days; the infrastructure owner records the outcome.",
+      "Ownership": "The backup recovery exercise process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-backup-v2",
+    "title": "Backup recovery exercise",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A backup recovery exercise is performed every 30 days; the infrastructure owner records the outcome.",
+      "Ownership": "The backup recovery exercise process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-backup-v1",
+    "title": "Backup recovery exercise",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A backup recovery exercise is performed every 90 days; the infrastructure owner records the outcome.",
+      "Ownership": "The backup recovery exercise process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-backup-v2",
+    "title": "Backup recovery exercise",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A backup recovery exercise is performed every 60 days; the infrastructure owner records the outcome.",
+      "Ownership": "The backup recovery exercise process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-downtime-v1",
+    "title": "Downtime communication",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "During a service downtime event, communication updates are sent every 30 minutes to the operations lead.",
+      "Ownership": "The downtime communication process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-downtime-v2",
+    "title": "Downtime communication",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "During a service downtime event, communication updates are sent every 15 minutes to the operations lead.",
+      "Ownership": "The downtime communication process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-downtime-v1",
+    "title": "Downtime communication",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "During a service downtime event, communication updates are sent every 30 minutes to the operations lead.",
+      "Ownership": "The downtime communication process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-downtime-v2",
+    "title": "Downtime communication",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "During a service downtime event, communication updates are sent every 20 minutes to the operations lead.",
+      "Ownership": "The downtime communication process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-invoice-v1",
+    "title": "Invoice exception review",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "An invoice exception must be reviewed within 10 business days of submission to the billing queue.",
+      "Ownership": "The invoice exception review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-invoice-v2",
+    "title": "Invoice exception review",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "An invoice exception must be reviewed within 5 business days of submission to the billing queue.",
+      "Ownership": "The invoice exception review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-invoice-v1",
+    "title": "Invoice exception review",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "An invoice exception must be reviewed within 10 business days of submission to the billing queue.",
+      "Ownership": "The invoice exception review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-invoice-v2",
+    "title": "Invoice exception review",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "An invoice exception must be reviewed within 7 business days of submission to the billing queue.",
+      "Ownership": "The invoice exception review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-records-v1",
+    "title": "Record request acknowledgment",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A record request is acknowledged within 3 business days; this is an administrative response target, not a release deadline.",
+      "Ownership": "The record request acknowledgment process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-records-v2",
+    "title": "Record request acknowledgment",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A record request is acknowledged within 1 business day; this is an administrative response target, not a release deadline.",
+      "Ownership": "The record request acknowledgment process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-records-v1",
+    "title": "Record request acknowledgment",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A record request is acknowledged within 3 business days; this is an administrative response target, not a release deadline.",
+      "Ownership": "The record request acknowledgment process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-records-v2",
+    "title": "Record request acknowledgment",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A record request is acknowledged within 2 business days; this is an administrative response target, not a release deadline.",
+      "Ownership": "The record request acknowledgment process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-device-v1",
+    "title": "Device return process",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A laptop device return must be completed within 14 calendar days after an approved equipment replacement.",
+      "Ownership": "The device return process process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-device-v2",
+    "title": "Device return process",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A laptop device return must be completed within 5 calendar days after an approved equipment replacement.",
+      "Ownership": "The device return process process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-device-v1",
+    "title": "Device return process",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A laptop device return must be completed within 14 calendar days after an approved equipment replacement.",
+      "Ownership": "The device return process process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-device-v2",
+    "title": "Device return process",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "A laptop device return must be completed within 7 calendar days after an approved equipment replacement.",
+      "Ownership": "The device return process process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-vendor-v1",
+    "title": "Vendor access renewal",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Vendor access renewal is reviewed every 90 days; unattended extensions are not allowed.",
+      "Ownership": "The vendor access renewal process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-vendor-v2",
+    "title": "Vendor access renewal",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Vendor access renewal is reviewed every 30 days; unattended extensions are not allowed.",
+      "Ownership": "The vendor access renewal process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-vendor-v1",
+    "title": "Vendor access renewal",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Vendor access renewal is reviewed every 90 days; unattended extensions are not allowed.",
+      "Ownership": "The vendor access renewal process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-vendor-v2",
+    "title": "Vendor access renewal",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Vendor access renewal is reviewed every 45 days; unattended extensions are not allowed.",
+      "Ownership": "The vendor access renewal process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-training-v1",
+    "title": "Operations training completion",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Operations training must be completed within 20 business days of the assigned training date.",
+      "Ownership": "The operations training completion process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-training-v2",
+    "title": "Operations training completion",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Operations training must be completed within 10 business days of the assigned training date.",
+      "Ownership": "The operations training completion process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-training-v1",
+    "title": "Operations training completion",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Operations training must be completed within 20 business days of the assigned training date.",
+      "Ownership": "The operations training completion process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-training-v2",
+    "title": "Operations training completion",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Operations training must be completed within 15 business days of the assigned training date.",
+      "Ownership": "The operations training completion process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-waitlist-v1",
+    "title": "Appointment waitlist review",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "The appointment waitlist is reviewed once weekly by scheduling staff.",
+      "Ownership": "The appointment waitlist review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-waitlist-v2",
+    "title": "Appointment waitlist review",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "The appointment waitlist is reviewed twice daily by scheduling staff.",
+      "Ownership": "The appointment waitlist review process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-waitlist-v1",
+    "title": "Appointment waitlist review",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "The appointment waitlist is reviewed once weekly by scheduling staff.",
+      "Ownership": "The appointment waitlist review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-waitlist-v2",
+    "title": "Appointment waitlist review",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "The appointment waitlist is reviewed once daily by scheduling staff.",
+      "Ownership": "The appointment waitlist review process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-result-v1",
+    "title": "Result routing acknowledgment",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Administrative result routing acknowledgment is due within 8 business hours; clinical interpretation is outside this policy.",
+      "Ownership": "The result routing acknowledgment process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-result-v2",
+    "title": "Result routing acknowledgment",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Administrative result routing acknowledgment is due within 2 business hours; clinical interpretation is outside this policy.",
+      "Ownership": "The result routing acknowledgment process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-result-v1",
+    "title": "Result routing acknowledgment",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Administrative result routing acknowledgment is due within 8 business hours; clinical interpretation is outside this policy.",
+      "Ownership": "The result routing acknowledgment process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-result-v2",
+    "title": "Result routing acknowledgment",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Administrative result routing acknowledgment is due within 4 business hours; clinical interpretation is outside this policy.",
+      "Ownership": "The result routing acknowledgment process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-priority-v1",
+    "title": "Priority support escalation",
+    "tenant": "north",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Priority support requests must be escalated within 60 minutes to the duty operations coordinator.",
+      "Ownership": "The priority support escalation process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "north-priority-v2",
+    "title": "Priority support escalation",
+    "tenant": "north",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Priority support requests must be escalated within 15 minutes to the duty operations coordinator.",
+      "Ownership": "The priority support escalation process is owned by the fictional north operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-priority-v1",
+    "title": "Priority support escalation",
+    "tenant": "south",
+    "version": 1,
+    "active": false,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Priority support requests must be escalated within 60 minutes to the duty operations coordinator.",
+      "Ownership": "The priority support escalation process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  },
+  {
+    "id": "south-priority-v2",
+    "title": "Priority support escalation",
+    "tenant": "south",
+    "version": 2,
+    "active": true,
+    "classification": "synthetic operations policy",
+    "sections": {
+      "Policy": "Priority support requests must be escalated within 30 minutes to the duty operations coordinator.",
+      "Ownership": "The priority support escalation process is owned by the fictional south operations team. Exceptions require supervisor review.",
+      "Audit": "Log the request identifier, decision time and responsible team. Do not enter personal health information into this demonstration."
+    }
+  }
+]

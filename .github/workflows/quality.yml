@@ -1,0 +1,38 @@
+name: Tests and reproducible evaluations
+on:
+  push:
+    paths: ['secure-agentic-ai/**', 'healthcare-rag-evaluation/**', '.github/workflows/quality.yml']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - project: secure-agentic-ai
+            module: agent_platform
+          - project: healthcare-rag-evaluation
+            module: healthcare_rag
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      LANGSMITH_TRACING: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: '${{ matrix.project }}/requirements.lock'
+      - run: python -m pip install -r requirements.lock && python -m pip install --no-deps -e .
+      - run: python -m pytest -q
+      - run: python -m ${{ matrix.module }}.evaluate --output runtime/ci-results --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: '${{ matrix.project }}-evaluation'
+          path: '${{ matrix.project }}/runtime/ci-results'

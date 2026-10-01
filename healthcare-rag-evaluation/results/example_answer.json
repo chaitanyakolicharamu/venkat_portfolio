@@ -1,0 +1,71 @@
+{
+  "query": "What is the appointment cancellation window?",
+  "tenant": "north",
+  "strategy": "hybrid",
+  "status": "answered",
+  "answer": "Appointment cancellation requires 24 hours notice before the scheduled appointment. [1]",
+  "citations": [
+    {
+      "id": "north-cancellation-v2#0",
+      "document_id": "north-cancellation-v2",
+      "title": "Appointment cancellation",
+      "text": "Appointment cancellation requires 24 hours notice before the scheduled appointment.",
+      "tenant": "north",
+      "active": true,
+      "version": 2,
+      "section": "Policy",
+      "score": 0.78996,
+      "dense_score": 0.59038,
+      "lexical_score": 1.0,
+      "coverage": 0.66667,
+      "retrieved_chunk_id": "north-cancellation-v2#0"
+    }
+  ],
+  "retrieved": [
+    {
+      "id": "north-cancellation-v2#0",
+      "document_id": "north-cancellation-v2",
+      "title": "Appointment cancellation",
+      "text": "Appointment cancellation requires 24 hours notice before the scheduled appointment.",
+      "tenant": "north",
+      "active": true,
+      "version": 2,
+      "section": "Policy",
+      "score": 0.78996,
+      "dense_score": 0.59038,
+      "lexical_score": 1.0,
+      "coverage": 0.66667
+    },
+    {
+      "id": "north-waitlist-v2#0",
+      "document_id": "north-waitlist-v2",
+      "title": "Appointment waitlist review",
+      "text": "The appointment waitlist is reviewed twice daily by scheduling staff.",
+      "tenant": "north",
+      "active": true,
+      "version": 2,
+      "section": "Policy",
+      "score": 0.28879,
+      "dense_score": 0.13465,
+      "lexical_score": 0.38888,
+      "coverage": 0.33333
+    },
+    {
+      "id": "north-interpreter-v2#0",
+      "document_id": "north-interpreter-v2",
+      "title": "Interpreter booking",
+      "text": "Interpreter language support must be booked 48 hours before the appointment.",
+      "tenant": "north",
+      "active": true,
+      "version": 2,
+      "section": "Policy",
+      "score": 0.22889,
+      "dense_score": 0.08457,
+      "lexical_score": 0.29473,
+      "coverage": 0.33333
+    }
+  ],
+  "elapsed_ms": 1.396,
+  "generation_mode": "extractive; source text plus citation",
+  "notice": "Synthetic healthcare operations policies. No patient data or clinical advice."
+}
